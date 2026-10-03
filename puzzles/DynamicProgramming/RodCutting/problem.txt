@@ -1,0 +1,10 @@
+Rod Cutting
+
+• Given a rod of length L and value v(l) of rod of length l for all l in {1,2,...,L}
+• Goal: Cut the rod to maximize the value of cut rod pieces
+• Example: L = 7, v = [0,1,10,13,18,20,31,32] l=01234567
+• Maybe greedily take most valuable per unit length?
+• Nope! arg maxl v[l]/l = 6, and partitioning [6, 1] yields 32 which is not optimal! 
+• Solution:v[2]+v[2]+v[3]=10+10+13=33
+• Maximization problem on value of partition
+

@@ -1,0 +1,39 @@
+Sum of arithemetic series:
+    Sn = T1 + T2 + ... + Tn
+       = n * (T1 + Tn) / 2
+
+Sum of geometric series (r is the common ratio):
+    Sn = T1 + T2 + ... + Tn
+       = T1 * (1 - r^n) / (1 - r)
+
+Permutations (order matters) with repetition:
+    Choosing r of n different types = n ^ r
+  Example: 2 colors of R, G, B:
+    RR, RG, RB, GG, GR, GB, BB, BR, BG {3^2 = 9}
+
+Permutations (order matters) without repetition:
+    Choosing r of n different types, P(n, r), nPr = n! / (n-r)!
+  Example: 2 unique colors of R, G, B in position 1 & 2:
+    RG, RB, GR, GB, BR, BG {3!/(3-2)! = 6}
+
+Combinations (order does not matter) without repetition:
+    n choose r, C(n, r), nCr = n! / ((n-r)!.r!)
+    {Binomial coefficient, (n r) }
+  Example: 2 unique colors of R, G, B in a bag:
+    RG, RB, GB {3!/((3-2)!.2!) = 3
+
+Combinations (order does not matter) with repetition:
+    Choosing r of n different types.
+    Moving from 1 type to the next is a choice, so n really is:
+      r + (n-1)
+    So we are calculating: (r+n-1)Cr = (r+n-1)! / (r!.(n-1)!)
+
+Newton's method:
+  https://en.wikipedia.org/wiki/Newton%27s_method
+  x1 = x0 - f(x0)/f'(x0)
+    where: f'(x0) = df(x0)/dx
+  Applications:
+  * Square Root: z = z - (z*z - x) / (2*z)
+  * Reciprocal: z = z * (2 - x*z)
+
+

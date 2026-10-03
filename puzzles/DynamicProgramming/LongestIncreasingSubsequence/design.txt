@@ -1,0 +1,14 @@
+
+LIS DP, use suffixes:
+
+* Subproblems:
+  L(i) = length of the longest increasing subsequence of suffix A[i:]
+  for 0 <= i <= n
+* Relation:
+  L(i) = max(1 + L(j), where i<j<n & a[j] > a[i]
+* Topo order: Decreasing i
+* Base cases: L(n) = 0
+* Original: L(0)
+* Time: 
+
+

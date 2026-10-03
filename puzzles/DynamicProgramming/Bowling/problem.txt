@@ -1,0 +1,10 @@
+
+• Given n pins labeled 0, 1, . . . , n � 1
+• Pin i has value vi
+• Ball of size similar to pin can hit either
+  – 1 pin i, in which case we get vi points
+  – 2 adjacent pins i and i + 1, in which case we get vi · vi+1 points
+• Once a pin is hit, it can’t be hit again (removed)
+• Problem: Throw zero or more balls to maximize total points
+• Example: [ -1, 1 , 1 , 1 , 9, 9 , 3 , -3, -5 , 2, 2 ]
+

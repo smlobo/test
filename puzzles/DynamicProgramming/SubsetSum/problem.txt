@@ -1,0 +1,8 @@
+Subset Sum
+
+• Input: Sequence of n positive integers A={a0,a1,...,an}
+• Output: Is there a subset of A that sums exactly to T? 
+• Example: A = (1,3,4,12,19,21,22), T = 47 allows A' = {3,4,19,21}
+• Optimization problem? Decision problem! Answer is YES or NO, TRUE or FALSE
+• In example, answer is YES. However, answer is NO for some T , e.g., 2, 6, 9, 10, 11, . 
+

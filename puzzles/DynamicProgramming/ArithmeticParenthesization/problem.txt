@@ -1,0 +1,8 @@
+Arithmetic Parenthesization
+• Input: arithmetic expression a0 ∗1 a1 ∗2 a2 · · · ∗n−1 an−1 where each 
+    ai is an integer and each ∗i ∈ {+, ×}
+• Output: Where to place parentheses to maximize the evaluated expression
+• Example: 7+4×3+5 → ((7)+(4))×((3)+(5)) = 88
+• Allow negative integers!
+• Example:7+(−4)×3+(−5)→((7)+((−4)×((3)+(−5))))=15
+

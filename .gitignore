@@ -129,3 +129,6 @@ gradlew.bat
 # emacs
 *~
 
+# Swap
+*.swp
+
