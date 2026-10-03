@@ -1,0 +1,102 @@
+%parfait-report:parfait-report_1.0.0
+%report-version:11
+%begin-report
+%begin:SCM
+%end:SCM
+%begin:TargetData
+%t:1:go:go
+%end:TargetData
+%begin:Code
+%d:1:/Users/smlobo/test/Go
+%d:2:
+%d:7:/Users/smlobo/.goenv/versions/1.22.6/src/time
+%f:3:2:<UnknownFile>:0:0:
+%f:5:1:hello-world.go:0:0:249b426faf0f2d0c603b708778e3f679
+%f:8:7:format_rfc3339.go:0:0:441a77060dc667bf09504d41b75fcc3a
+%c:4:3:1:{}:{}:{}
+%c:6:5:1:{}:{}:{}
+%c:9:8:1:{}:{}:{}
+%m:10:1:hello-world.bc/go-application.bc:1:{4,6,9}
+%end:Code
+%begin:Messages
+%end:Messages
+%begin:Passes
+%end:Passes
+%begin:DefectTypes
+%end:DefectTypes
+%begin:DefectDependencys
+%end:DefectDependencys
+%begin:DependencyGroups
+%end:DependencyGroups
+%begin:Defects
+%end:Defects
+%begin:ModuleResults
+%z:1:10:{}:{}
+%end:ModuleResults
+%begin:FunctionSummaries
+%end:FunctionSummaries
+%begin:MetricDimensions
+%u:1:duration:duration:milliseconds:ms:duration in milliseconds
+%u:2:count::::count
+%end:MetricDimensions
+%begin:MetricTypes
+%E:1:0:all:::0:0:1:0
+%E:2:1:parfait:Parfait Runtime Metrics:Measuring Parfait runtime performance and workloads.:0:0:1:0
+%E:3:2:runtime_memflow:MemoryFlows flowObjects time::0:0:0:1
+%E:4:2:memflow_compcount:MemoryFlow compute count:Number of times the MemoryFlow was computed.:0:0:0:1
+%E:5:2:memflow_edgecount:MemoryFlow edge count:Number of edges between MemoryObjects.:0:0:0:1
+%E:6:2:memflow_nodecount:MemoryFlow node count:Number of MemoryObjects.:0:0:0:1
+%E:7:2:runtime_memflow_sens:MemoryFlows flowObjects sensitive time::0:0:0:1
+%E:8:2:runtime_memflow_insens:MemoryFlows flowObjects insensitive time::0:0:0:1
+%E:9:2:global:Parfait Metrics:Applicable to complete Parfait execution:0:0:1:0
+%E:10:9:runtime_readbc:Read bitcode time::1:0:0:1
+%E:11:9:runtime_worker:Total worker time:Excludes report writing.:1:0:0:1
+%E:12:9:runtime_backwards_dataflow:Time spent in backwards dataflow::1:0:0:1
+%E:13:2:count_csumm:Constraint Summary generation constraint count::0:0:0:1
+%E:14:13:count_csumm_ValueFlow:ValueFlow constraint count:Number of constraints in this summary group.:2:0:0:1
+%E:15:2:count_csumm_gen:Constraint Summary generation constraint count::0:0:0:1
+%E:16:15:count_csumm_gen_ValueFlow:ValueFlow constraint count:Number of constraints in this summary group.:2:0:0:1
+%E:17:3:runtime_memflow.memflow_sens:MemoryFlows flowObjects time > MemoryFlows flowObjects sensitive time: > :1:0:0:1
+%E:18:3:runtime_memflow.memflow_insens:MemoryFlows flowObjects time > MemoryFlows flowObjects insensitive time: > :1:0:0:1
+%E:19:2:count_csumm_dflow:Constraint Summary generation constraint count::0:0:0:1
+%E:20:19:count_csumm_dflow_ValueFlow:ValueFlow constraint count:Number of constraints after dataflow of this summary group.:2:0:0:1
+%E:21:2:result_defectlist:Defect list pass results::0:0:0:1
+%E:22:21:result_defectlist_initial:Total initial defects:Number of potential defects initially created.:0:0:0:1
+%E:23:21:result_defectlist_initial_(anonymous namespace)%3A%3ACallRuleList:(anonymous namespace)%3A%3ACallRuleList initial defects:Number of potential defects initially created by this pass.:2:0:0:1
+%E:24:21:result_defectlist_initial_(anonymous namespace)%3A%3ATypeRuleList:(anonymous namespace)%3A%3ATypeRuleList initial defects:Number of potential defects initially created by this pass.:2:0:0:1
+%E:25:2:runtime_defectlist:Defect list pass time::0:0:0:1
+%E:26:25:runtime_defectlist_(anonymous namespace)%3A%3ACallRuleList:(anonymous namespace)%3A%3ACallRuleList time:Defect list runtime.:1:0:0:1
+%E:27:25:runtime_defectlist_(anonymous namespace)%3A%3ATypeRuleList:(anonymous namespace)%3A%3ATypeRuleList time:Defect list runtime.:1:0:0:1
+%E:28:9:result_csumm_Exits:Exits constraint count:Constraint summaries:2:0:0:1
+%E:29:28:result_csumm_Exits_full:Exits constraint count:Constraint summaries with full precision:2:0:0:1
+%E:30:9:result_csumm_ValueFlow:ValueFlow constraint count:Constraint summaries:2:0:0:1
+%E:31:30:result_csumm_ValueFlow_full:ValueFlow constraint count:Constraint summaries with full precision:2:0:0:1
+%E:32:9:result_csumm_ExceptionFlow:ExceptionFlow constraint count:Constraint summaries:2:0:0:1
+%E:33:32:result_csumm_ExceptionFlow_full:ExceptionFlow constraint count:Constraint summaries with full precision:2:0:0:1
+%E:34:2:runtime_csumm:Constraint Summary generation time::0:0:0:1
+%E:35:34:runtime_csumm_Exits:Exits time:Time spent on this summary group.:1:0:0:1
+%E:36:35:runtime_csumm_Exits_gen:Exits time:Time spent computing this summary group.:1:0:0:1
+%E:37:34:runtime_csumm_ValueFlow:ValueFlow time:Time spent on this summary group.:1:0:0:1
+%E:38:37:runtime_csumm_ValueFlow_gen:ValueFlow time:Time spent computing this summary group.:1:0:0:1
+%E:39:37:runtime_csumm_ValueFlow_dflow:ValueFlow time:Time spent in dataflow of summary group.:1:0:0:1
+%E:40:37:runtime_csumm_ValueFlow_finalize:ValueFlow time:Time spent finalizing summary group.:1:0:0:1
+%E:41:34:runtime_csumm_ExceptionFlow:ExceptionFlow time:Time spent on this summary group.:1:0:0:1
+%E:42:41:runtime_csumm_ExceptionFlow_gen:ExceptionFlow time:Time spent computing this summary group.:1:0:0:1
+%E:43:39:runtime_csumm_ValueFlow_dflow.backwards_dataflow:ValueFlow time > Time spent in backwards dataflow:Time spent in dataflow of summary group. > :1:0:0:1
+%E:44:9:runtime_scm:SCM Scan time::1:0:0:1
+%E:45:9:runtime_jobs:Analysis Jobs time:May be multiple processes in parallel during this time.:1:0:0:1
+%E:46:9:runtime_total:Total time:Excludes report writing.:1:0:0:1
+%E:47:9:runtime_config:Parse Config time::1:0:0:1
+%E:48:9:runtime_options:Parse Options time::1:0:0:1
+%E:49:9:runtime_sumdump:Summary Dump time::1:0:0:1
+%end:MetricTypes
+%begin:Metrics
+%e:1:10:{{3:23}{4:5}{5:4}{6:10}{7:18}{8:0}{10:228}{11:28524}{12:441}{14:29}{16:42}{17:18}{18:0}{20:29}{22:0}{23:0}{24:0}{26:6}{27:7}{29:5}{31:5}{33:5}{36:2}{38:26}{39:574}{40:188}{42:23}{43:441}}
+%e:2:0:{{3:23}{4:5}{5:4}{6:10}{7:18}{8:0}{44:1}{45:34764}{46:65849}{47:18825}{10:228}{11:28524}{48:547}{49:0}{12:441}{14:29}{16:42}{17:18}{18:0}{20:29}{22:0}{23:0}{24:0}{26:6}{27:7}{29:5}{31:5}{33:5}{36:2}{38:26}{39:574}{40:188}{42:23}{43:441}}
+%end:Metrics
+%begin:RepositoryStates
+%end:RepositoryStates
+%begin:ToolReports
+%R:1:{parfait:/Users/smlobo/parfait-installs/parfait-tools-2024.08/bin/parfait:2024.08:Parfait-Suite 2024.08 (64 bit) (2024-08-14)%0A:1490ca90f0e8af6d771038437186306c44ca2354:2024-08-13 10%3A45%3A17 -0400}:{1730122001:1730122001::aarch64:smlobo-work-mac.local:/Users/smlobo/test/Go:smlobo:hello-world.bc -f machine -o hello-world.mrr:ITERM_PROFILE=Default%0ACOLORTERM=truecolor%0APYENV_SHELL=bash%0AXPC_FLAGS=0x0%0ATERM_PROGRAM_VERSION=3.5.4%0ATERM_FEATURES=T3LrMSc7UUw9Ts3BFGsSyHNoSxF%0AIT2_BASH_UNEXPORT_HISTFILE=1%0A__CFBundleIdentifier=com.googlecode.iterm2%0ASSH_AUTH_SOCK=/private/tmp/com.apple.launchd.pjt0laGjS5/Listeners%0ADOTNET_CLI_TELEMETRY_OPTOUT=1%0ATERM_SESSION_ID=w7t0p0%3A8F7E7070-2E8A-47D6-9907-AD9C4FFEDADF%0AHOMEBREW_PREFIX=/opt/homebrew%0AJENV_SHELL=bash%0AGOENV_SHELL=bash%0AENV=/Applications/iTerm.app/Contents/Resources/bash-si-loader%0APWD=/Users/smlobo/test/Go%0AIT2_BASH_INJECT=1%0ALOGNAME=smlobo%0ACOMMAND_MODE=unix2003%0AITERM_SESSION_ID=w7t0p0%3A8F7E7070-2E8A-47D6-9907-AD9C4FFEDADF%0AHOME=/Users/smlobo%0ALANG=en_US.UTF-8%0AHISTFILE=/Users/smlobo/.bash_history%0APOSH_SHELL_VERSION=5.2.37(1)-release%0APOSH_SESSION_ID=d228b5b0-1734-434b-9479-ed9dcf9f4b3d%0AOSTYPE=darwin23.4.0%0ACONDA_PROMPT_MODIFIER=false%0ATMPDIR=/var/folders/1n/w9jxsh3162zb1pp_zb4lzhnh0000gp/T/%0ALC_TERMINAL=iTerm2%0ACLICOLOR=1%0AGOROOT=/Users/smlobo/.goenv/versions/1.22.6%0AXDG_CACHE_HOME=/Users/smlobo/.oh-my-posh%0AINFOPATH=/opt/homebrew/share/info%3A/opt/homebrew/share/info%3A%0ATERM=xterm-256color%0AUSER=smlobo%0ACOLORFGBG=15;0%0AHOMEBREW_CELLAR=/opt/homebrew/Cellar%0ALC_TERMINAL_VERSION=3.5.4%0ASHLVL=1%0AGOENV_ROOT=/Users/smlobo/.goenv%0AHOMEBREW_REPOSITORY=/opt/homebrew%0AXPC_SERVICE_NAME=0%0ATERMINFO_DIRS=/Applications/iTerm.app/Contents/Resources/terminfo%3A/usr/share/terminfo%0APOSH_THEME=/Users/smlobo/.oh-my-posh/themes/sheldon.json%0AJQ_COLORS=1;31%3A0;39%3A0;39%3A0;39%3A0;32%3A1;39%3A1;39%0APYENV_ROOT=/Users/smlobo/.pyenv%0APATH=/opt/homebrew/opt/grep/libexec/gnubin%3A/Users/smlobo/.goenv/versions/1.22.6/bin%3A/opt/homebrew/opt/make/libexec/gnubin%3A/Users/smlobo/.pyenv/shims%3A/Users/smlobo/.jenv/shims%3A/Users/smlobo/.jenv/bin%3A/opt/homebrew/bin%3A/opt/homebrew/sbin%3A/opt/homebrew/opt/grep/libexec/gnubin%3A/Users/smlobo/.goenv/versions/1.22.6/bin%3A/opt/homebrew/opt/make/libexec/gnubin%3A/Users/smlobo/.jenv/shims%3A/Users/smlobo/.jenv/bin%3A/usr/local/bin%3A/System/Cryptexes/App/usr/bin%3A/usr/bin%3A/bin%3A/usr/sbin%3A/sbin%3A/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin%3A/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin%3A/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin%3A/Applications/iTerm.app/Contents/Resources/utilities%3A/Applications/Meld.app/Contents/MacOS%3A/opt/homebrew/opt/binutils/bin%3A/Users/smlobo/.pyenv/versions/2.7.18/bin%3A/Users/smlobo/.pyenv/versions/3.5.10/bin%3A/Users/smlobo/.pyenv/versions/3.6.15/bin%3A/Users/smlobo/.pyenv/versions/3.7.17/bin%3A/Users/smlobo/.pyenv/versions/3.8.19/bin%3A/Users/smlobo/.pyenv/versions/3.9.19/bin%3A/Users/smlobo/.pyenv/versions/3.10.14/bin%3A/Users/smlobo/.pyenv/versions/3.11.9/bin%3A/Users/smlobo/.pyenv/versions/3.12.2/bin%3A/Users/smlobo/parfait-installs/parfait-tools-2024.08/bin%3A/Users/smlobo/.goenv/shims%3A/Users/smlobo/go/1.22.6/bin%3A/Users/smlobo/utils%3A/opt/homebrew/opt/binutils/bin%3A/Users/smlobo/.pyenv/versions/2.7.18/bin%3A/Users/smlobo/.pyenv/versions/3.5.10/bin%3A/Users/smlobo/.pyenv/versions/3.6.15/bin%3A/Users/smlobo/.pyenv/versions/3.7.17/bin%3A/Users/smlobo/.pyenv/versions/3.8.19/bin%3A/Users/smlobo/.pyenv/versions/3.9.19/bin%3A/Users/smlobo/.pyenv/versions/3.10.14/bin%3A/Users/smlobo/.pyenv/versions/3.11.9/bin%3A/Users/smlobo/.pyenv/versions/3.12.2/bin%3A/Users/smlobo/parfait-installs/parfait-tools-2024.08/bin%3A/Users/smlobo/go/1.22.6/bin%3A/Users/smlobo/utils%0AJENV_LOADED=1%0APOWERLINE_COMMAND=oh-my-posh%0AOLDPWD=/Users/smlobo%0AGOPATH=/Users/smlobo/go/1.22.6%0A__CF_USER_TEXT_ENCODING=0x1F6%3A0x0%3A0x0%0ATERM_PROGRAM=iTerm.app%0A_=/Users/smlobo/parfait-installs/parfait-tools-2024.08/bin/parfait%0A::::1:0:0:0:1}:{}:{}:{1}:{}:{}:{1}:{2}:{}
+%end:ToolReports
+%end-report

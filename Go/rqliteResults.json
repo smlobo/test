@@ -1,0 +1,28 @@
+{
+    "results": [
+        {
+            "types": {
+                "id": "integer",
+                "name": "text"
+            },
+            "rows": [
+                {
+                    "id": 1,
+                    "name": "amelia"
+                },
+                {
+                    "id": 2,
+                    "name": "ryan"
+                },
+                {
+                    "id": 3,
+                    "name": "sheldon"
+                },
+                {
+                    "id": 4,
+                    "name": "aparna"
+                }
+            ]
+        }
+    ]
+}
