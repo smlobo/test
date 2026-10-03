@@ -1,3 +1,17 @@
+# binaries
+# 1. Ignore absolutely everything
+*
+
+# 2. Re-allow all directories so Git can scan into them
+!*/
+
+# 3. Re-allow any file that has an extension (contains a dot)
+!*.*
+
+# 4. (Optional) Explicitly re-allow extensionless source files you want to keep
+!Makefile
+!README
+
 # Prerequisites
 *.d
 
@@ -53,3 +67,21 @@ dkms.conf
 
 # debug information files
 *.dwo
+
+# IntelliJ
+.idea
+
+# CMake build
+build*
+CMakeUserPresets.json
+
+# Mac
+.DS_Store
+
+# LLVM
+*.bc
+*.ll
+
+# gdb
+.gdb_history
+
