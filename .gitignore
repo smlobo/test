@@ -85,3 +85,6 @@ CMakeUserPresets.json
 # gdb
 .gdb_history
 
+# Python
+__pycache__
+
