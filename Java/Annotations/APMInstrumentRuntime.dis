@@ -1,0 +1,27 @@
+Classfile /home/smlobo/test/Java/Annotations/APMInstrumentRuntime.class
+  Last modified Jan 4, 2021; size 299 bytes
+  MD5 checksum c3b3650a7330cb8931d64fbb071b0e77
+  Compiled from "InheritAnnotations.java"
+interface APMInstrumentRuntime extends java.lang.annotation.Annotation
+  minor version: 0
+  major version: 52
+  flags: ACC_INTERFACE, ACC_ABSTRACT, ACC_ANNOTATION
+Constant pool:
+   #1 = Class              #11            // APMInstrumentRuntime
+   #2 = Class              #12            // java/lang/Object
+   #3 = Class              #13            // java/lang/annotation/Annotation
+   #4 = Utf8               SourceFile
+   #5 = Utf8               InheritAnnotations.java
+   #6 = Utf8               RuntimeVisibleAnnotations
+   #7 = Utf8               Ljava/lang/annotation/Retention;
+   #8 = Utf8               value
+   #9 = Utf8               Ljava/lang/annotation/RetentionPolicy;
+  #10 = Utf8               RUNTIME
+  #11 = Utf8               APMInstrumentRuntime
+  #12 = Utf8               java/lang/Object
+  #13 = Utf8               java/lang/annotation/Annotation
+{
+}
+SourceFile: "InheritAnnotations.java"
+RuntimeVisibleAnnotations:
+  0: #7(#8=e#9.#10)

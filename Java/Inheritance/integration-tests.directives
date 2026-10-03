@@ -1,0 +1,10 @@
+# Syntax:
+#   Match classNameRegex  implementsExtendsRegex  methodNameRegex  descriptorRegex  ProbeString
+Match Animal .* .* .* com.oracle.apm.agent.instrumentation.internal.PrintProbe
+
+Match .* NoMatchHereForcesFullInheritanceWalk .* .* com.oracle.apm.agent.instrumentation.internal.PrintProbe
+
+Constructor Animal .* .* com.oracle.apm.agent.instrumentation.internal.PrintProbe
+
+Constructor .* NoMatchHereForcesFullInheritanceWalk .* com.oracle.apm.agent.instrumentation.internal.PrintProbe
+

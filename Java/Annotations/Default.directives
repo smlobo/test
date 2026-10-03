@@ -1,0 +1,13 @@
+# This file is generally meant to be edited by Oracle engineers.  Please work with your
+# support representative to ensure a successful outcome.
+
+# Syntax:
+#   Match classNameRegex  implementsExtendsRegex  methodNameRegex  descriptorRegex  ProbeString
+#   Ignore classNameRegex
+#   Constructor classNameRegex implementsExtendsRegex descriptorRegex ProbeString
+# Ignore always "wins", even if a Match occurs before it in the file
+
+# Some example Probes
+
+# The "Wait" class, the "main" method, 1 Array of String parameter, returning void
+Match TestCase .* .* .* com.oracle.apm.agent.instrumentation.internal.PrintProbe

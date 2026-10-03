@@ -1,0 +1,128 @@
+{
+    "major-version": 1,
+    "minor-version": 0,
+    "apm-created": true,
+    "payload-creation-ts-millis": 1598386205835,
+    "resource": {
+        "attributes": [
+            {
+                "key": "service-instance-id",
+                "value": "88546ad0dcfcc44e8f7b09b8670f8c3d",
+                "id": false
+            },
+            {
+                "key": "service-name",
+                "value": "sheldon-fake",
+                "id": true
+            },
+            {
+                "key": "display-name",
+                "value": "smlobo-lenovo-ol7_http:8080;ajp:8009@e87469ffbed9f45974869461797f3e41",
+                "id": true
+            },
+            {
+                "key": "appserver-id",
+                "value": "e87469ffbed9f45974869461797f3e41",
+                "id": true
+            },
+            {
+                "key": "apm-version",
+                "value": "0.1-SNAPSHOT",
+                "id": false
+            },
+            {
+                "key": "hostname-canonical",
+                "value": "smlobo-lenovo-ol7",
+                "id": true
+            },
+            {
+                "key": "host-address",
+                "value": "10.1.1.137",
+                "id": false
+            },
+            {
+                "key": "appserver-name",
+                "value": "Apache Tomcat",
+                "id": true
+            },
+            {
+                "key": "appserver-version",
+                "value": "8.0.47",
+                "id": true
+            },
+            {
+                "key": "appserver-ports",
+                "value": "http:8080;ajp:8009",
+                "id": false
+            },
+            {
+                "key": "os-name",
+                "value": "Linux",
+                "id": true
+            },
+            {
+                "key": "os-version",
+                "value": "4.1.12-112.14.13.el7uek.x86_64",
+                "id": false
+            },
+            {
+                "key": "vm-name",
+                "value": "Java(TM) SE Runtime Environment",
+                "id": false
+            },
+            {
+                "key": "vm-version",
+                "value": "1.8.0_201",
+                "id": false
+            },
+            {
+                "key": "appserver-type",
+                "value": "tomcat",
+                "id": false
+            },
+            {
+                "key": "appserver",
+                "value": true,
+                "id": false
+            },
+            {
+                "key": "hostname",
+                "value": "smlobo-lenovo-ol7",
+                "id": true
+            },
+            {
+                "key": "host-names",
+                "value": "adcq12z62-fw3-port6-v715.us.voip.oraclecorp.com,dhcp-10-154-163-168.vpn.oracle.com,smlobo-lenovo-ol7",
+                "id": false
+            }
+        ]
+    },
+    "spans": [
+        {
+            "id": "19e09080451eec4e",
+            "trace-id": "9d6dd42a601af7b219e09080451eec4e",
+            "name": "/WebHelloWorld/HWServlet",
+            "ts-micros": 1598386205523808,
+            "td-micros": 32441,
+            "kind": "SERVER",
+            "attributes": {
+                "context-root": "/WebHelloWorld",
+                "http.status_code": 200,
+                "component": "SERVLET",
+                "span.kind": "server",
+                "http.url": "http://localhost:8080/WebHelloWorld/HWServlet",
+                "deployment-info": "WebHelloWorld; WebHelloWorld",
+                "http.method": "GET"
+            },
+            "events": [
+                {
+                    "ts-micros": 1598386205544548,
+                    "name": "event",
+                    "attributes": {
+                        "event": "Activate"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,9 @@
+public class SampleTransformer implements ClassFileTransformer {
+    public byte[] transform(ClassLoader loader, String className,
+                            Class classModified,
+                            ProtectionDomain protectionDomain,
+                            byte[] classfileBuffer) {
+
+        return NULL;
+    }
+}

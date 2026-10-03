@@ -1,0 +1,18 @@
+/Users/smlobo/.jenv/shims/java -classpath /Users/smlobo/parfait-installs/parfait-tools-2026.04/share/parfait-tools/ PrintJVMProperties >PARENT_PIPE
+/Users/smlobo/.jenv/shims/java -help 2>PARENT_PIPE
+mkdir /var/folders/1n/w9jxsh3162zb1pp_zb4lzhnh0000gp/T/parfaitzZenNZ
+PARFAIT_TRANSLATION_LOG_PATH=/var/folders/1n/w9jxsh3162zb1pp_zb4lzhnh0000gp/T/parfait4a8K91/0.json /Users/smlobo/.jenv/shims/javac "-J--add-exports=jdk.compiler/com.sun.tools.javac.main=ALL-UNNAMED" "-J--add-exports=jdk.compiler/com.sun.tools.javac.comp=ALL-UNNAMED" "-J--add-exports=jdk.compiler/com.sun.tools.javac.util=ALL-UNNAMED" "-J--add-exports=jdk.compiler/com.sun.tools.javac.tree=ALL-UNNAMED" "-J--add-exports=jdk.compiler/com.sun.tools.javac.code=ALL-UNNAMED" "-J--add-exports=jdk.compiler/com.sun.tools.javac.api=ALL-UNNAMED" -J-cp -J/Users/smlobo/parfait-installs/parfait-tools-2026.04/share/parfait-tools/modules/parfait.tools11.jar HelloWorld.java "-Xplugin:com.oracle.parfait.pasif.PasifJavacPlugin -d /var/folders/1n/w9jxsh3162zb1pp_zb4lzhnh0000gp/T/parfaitzZenNZ" "-g:source,lines,vars" -d /var/folders/1n/w9jxsh3162zb1pp_zb4lzhnh0000gp/T/parfaitzZenNZ >PARENT_PIPE 2>PARENT_PIPE
+Jaffa Source List:
+|   HelloWorld.java
+Response File jaffa args:
+|   -d
+|   /var/folders/1n/w9jxsh3162zb1pp_zb4lzhnh0000gp/T/parfait4a8K91/wrapper1-java
+|   -cp
+|   /opt/homebrew/Cellar/openjdk@17/17.0.16/libexec/openjdk.jdk/Contents/Home/lib/modules:.
+|   -a
+|   .
+|   -l
+|   /var/folders/1n/w9jxsh3162zb1pp_zb4lzhnh0000gp/T/parfait-response-daaf52.txt
+|   /var/folders/1n/w9jxsh3162zb1pp_zb4lzhnh0000gp/T/parfaitzZenNZ
+PARFAIT_TRANSLATION_LOG_PATH=/var/folders/1n/w9jxsh3162zb1pp_zb4lzhnh0000gp/T/parfait4a8K91/1.json /Users/smlobo/parfait-installs/parfait-tools-2026.04/bin/jaffa @/var/folders/1n/w9jxsh3162zb1pp_zb4lzhnh0000gp/T/parfait-response-8a120f.txt >PARENT_PIPE 2>PARENT_PIPE
+Wrapper::zipBCOutputs -o . /var/folders/1n/w9jxsh3162zb1pp_zb4lzhnh0000gp/T/parfait4a8K91/wrapper1-java

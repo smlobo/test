@@ -1,0 +1,127 @@
+Classfile /home/smlobo/test/Java/HelloWorld.instr.class
+  Last modified Feb 9, 2020; size 1039 bytes
+  MD5 checksum 5673359db88038edc7eb7281e3d4070c
+  Compiled from "HelloWorld.java"
+public class HelloWorld
+  minor version: 0
+  major version: 52
+  flags: ACC_PUBLIC, ACC_SUPER
+Constant pool:
+   #1 = Methodref          #6.#15         // java/lang/Object."<init>":()V
+   #2 = Fieldref           #16.#17        // java/lang/System.out:Ljava/io/PrintStream;
+   #3 = String             #18            // Hello World
+   #4 = Methodref          #19.#20        // java/io/PrintStream.println:(Ljava/lang/String;)V
+   #5 = Class              #21            // HelloWorld
+   #6 = Class              #22            // java/lang/Object
+   #7 = Utf8               <init>
+   #8 = Utf8               ()V
+   #9 = Utf8               Code
+  #10 = Utf8               LineNumberTable
+  #11 = Utf8               main
+  #12 = Utf8               ([Ljava/lang/String;)V
+  #13 = Utf8               SourceFile
+  #14 = Utf8               HelloWorld.java
+  #15 = NameAndType        #7:#8          // "<init>":()V
+  #16 = Class              #23            // java/lang/System
+  #17 = NameAndType        #24:#25        // out:Ljava/io/PrintStream;
+  #18 = Utf8               Hello World
+  #19 = Class              #26            // java/io/PrintStream
+  #20 = NameAndType        #27:#28        // println:(Ljava/lang/String;)V
+  #21 = Utf8               HelloWorld
+  #22 = Utf8               java/lang/Object
+  #23 = Utf8               java/lang/System
+  #24 = Utf8               out
+  #25 = Utf8               Ljava/io/PrintStream;
+  #26 = Utf8               java/io/PrintStream
+  #27 = Utf8               println
+  #28 = Utf8               (Ljava/lang/String;)V
+  #29 = Utf8               com.oracle.apm.agent.instrumentation.internal.PrintProbe
+  #30 = String             #29            // com.oracle.apm.agent.instrumentation.internal.PrintProbe
+  #31 = String             #21            // HelloWorld
+  #32 = String             #11            // main
+  #33 = String             #12            // ([Ljava/lang/String;)V
+  #34 = Integer            1
+  #35 = Utf8               com/oracle/apm/agent/instrumentation/export/Probe
+  #36 = Class              #35            // com/oracle/apm/agent/instrumentation/export/Probe
+  #37 = Utf8               make
+  #38 = Utf8               (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Object;I)Lcom/oracle/apm/agent/instrumentation/export/IProbe;
+  #39 = NameAndType        #37:#38        // make:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Object;I)Lcom/oracle/apm/agent/instrumentation/export/IProbe;
+  #40 = Methodref          #36.#39        // com/oracle/apm/agent/instrumentation/export/Probe.make:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Object;I)Lcom/oracle/apm/agent/instrumentation/export/IProbe;
+  #41 = Utf8               com/oracle/apm/agent/instrumentation/export/IProbe
+  #42 = Class              #41            // com/oracle/apm/agent/instrumentation/export/IProbe
+  #43 = Utf8               [Ljava/lang/String;
+  #44 = Class              #43            // "[Ljava/lang/String;"
+  #45 = Integer            0
+  #46 = Utf8               param
+  #47 = Utf8               (ILjava/lang/Object;)V
+  #48 = NameAndType        #46:#47        // param:(ILjava/lang/Object;)V
+  #49 = InterfaceMethodref #42.#48        // com/oracle/apm/agent/instrumentation/export/IProbe.param:(ILjava/lang/Object;)V
+  #50 = Utf8               end
+  #51 = NameAndType        #50:#8         // end:()V
+  #52 = InterfaceMethodref #42.#51        // com/oracle/apm/agent/instrumentation/export/IProbe.end:()V
+  #53 = Utf8               java/lang/Throwable
+  #54 = Class              #53            // java/lang/Throwable
+  #55 = Utf8               endException
+  #56 = Utf8               (Ljava/lang/Object;)V
+  #57 = NameAndType        #55:#56        // endException:(Ljava/lang/Object;)V
+  #58 = InterfaceMethodref #42.#57        // com/oracle/apm/agent/instrumentation/export/IProbe.endException:(Ljava/lang/Object;)V
+  #59 = Utf8               StackMapTable
+{
+  public HelloWorld();
+    descriptor: ()V
+    flags: ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         4: return
+      LineNumberTable:
+        line 1: 0
+
+  public static void main(java.lang.String[]);
+    descriptor: ([Ljava/lang/String;)V
+    flags: ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=8, locals=2, args_size=1
+         0: aload_0
+         1: astore_1
+         2: ldc           #30                 // String com.oracle.apm.agent.instrumentation.internal.PrintProbe
+         4: ldc           #31                 // String HelloWorld
+         6: ldc           #32                 // String main
+         8: ldc           #33                 // String ([Ljava/lang/String;)V
+        10: aconst_null
+        11: ldc           #34                 // int 1
+        13: invokestatic  #40                 // Method com/oracle/apm/agent/instrumentation/export/Probe.make:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Object;I)Lcom/oracle/apm/agent/instrumentation/export/IProbe;
+        16: astore_0
+        17: aload_0
+        18: ldc           #45                 // int 0
+        20: aload_1
+        21: invokeinterface #49,  3           // InterfaceMethod com/oracle/apm/agent/instrumentation/export/IProbe.param:(ILjava/lang/Object;)V
+        26: getstatic     #2                  // Field java/lang/System.out:Ljava/io/PrintStream;
+        29: ldc           #3                  // String Hello World
+        31: invokevirtual #4                  // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+        34: aload_0
+        35: invokeinterface #52,  1           // InterfaceMethod com/oracle/apm/agent/instrumentation/export/IProbe.end:()V
+        40: return
+        41: dup
+        42: aload_0
+        43: swap
+        44: invokeinterface #58,  2           // InterfaceMethod com/oracle/apm/agent/instrumentation/export/IProbe.endException:(Ljava/lang/Object;)V
+        49: athrow
+      Exception table:
+         from    to  target type
+            26    41    41   any
+      StackMapTable: number_of_entries = 2
+        frame_type = 255 /* full_frame */
+          offset_delta = 17
+          locals = [ class com/oracle/apm/agent/instrumentation/export/IProbe, class "[Ljava/lang/String;" ]
+          stack = []
+        frame_type = 255 /* full_frame */
+          offset_delta = 23
+          locals = [ class com/oracle/apm/agent/instrumentation/export/IProbe ]
+          stack = [ class java/lang/Throwable ]
+      LineNumberTable:
+        line 3: 26
+        line 4: 34
+}
+SourceFile: "HelloWorld.java"

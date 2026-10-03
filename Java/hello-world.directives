@@ -1,0 +1,6 @@
+# Syntax:
+#   Match classNameRegex implementsExtendsRegex methodNameRegex descriptorRegex annotationRegex ProbeString
+#   Constructor classNameRegex implementsExtendsRegex descriptorRegex annotationRegex ProbeString
+
+Match .* .* .* .* .* com.oracle.apm.agent.instrumentation.internal.PrintProbe
+

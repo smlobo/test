@@ -1,0 +1,401 @@
+Classfile /home/smlobo/test/Java/LocalVariableAnnotation.class
+  Last modified Jul 29, 2019; size 2185 bytes
+  MD5 checksum f4adf828062015ae2bcc9ef5898fbb63
+  Compiled from "LocalVariableAnnotation.java"
+public class LocalVariableAnnotation
+  minor version: 0
+  major version: 52
+  flags: ACC_PUBLIC, ACC_SUPER
+Constant pool:
+    #1 = Methodref          #43.#68       // java/lang/Object."<init>":()V
+    #2 = String             #69           // dfoo1
+    #3 = String             #70           // dfoo2
+    #4 = Fieldref           #71.#72       // java/lang/System.out:Ljava/io/PrintStream;
+    #5 = Class              #73           // java/lang/StringBuilder
+    #6 = Methodref          #5.#68        // java/lang/StringBuilder."<init>":()V
+    #7 = Methodref          #5.#74        // java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    #8 = String             #75           //  :
+    #9 = Methodref          #5.#76        // java/lang/StringBuilder.toString:()Ljava/lang/String;
+   #10 = Methodref          #77.#78       // java/io/PrintStream.println:(Ljava/lang/String;)V
+   #11 = String             #79           // XF1
+   #12 = String             #80           // dfoo3
+   #13 = String             #81           // a20
+   #14 = String             #82           // XF3-1
+   #15 = String             #83           // a < 20  - 1:
+   #16 = String             #84           // dfoo4
+   #17 = String             #85           // blah
+   #18 = String             #86           // XF3-2
+   #19 = String             #87           //  -> a > 20 - 2 :
+   #20 = String             #88           // XF2
+   #21 = Methodref          #5.#89        // java/lang/StringBuilder.append:(I)Ljava/lang/StringBuilder;
+   #22 = String             #90           // ,
+   #23 = String             #91           // Hello local variable annotation
+   #24 = String             #92           // d1
+   #25 = String             #93           // d2
+   #26 = String             #94           // X1
+   #27 = String             #95           // X2
+   #28 = Class              #96           // LocalVariableAnnotation
+   #29 = Methodref          #28.#68       // LocalVariableAnnotation."<init>":()V
+   #30 = Methodref          #28.#97       // LocalVariableAnnotation.qqq:(II)V
+   #31 = String             #98           // X3
+   #32 = String             #99           // var1 =
+   #33 = String             #100          // ; var2 =
+   #34 = String             #101          // ; var3 =
+   #35 = String             #102          // ref =
+   #36 = Methodref          #5.#103       // java/lang/StringBuilder.append:(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+   #37 = String             #104          // var3 antn:
+   #38 = Methodref          #43.#105      // java/lang/Object.getClass:()Ljava/lang/Class;
+   #39 = Methodref          #106.#107     // java/lang/Class.getAnnotations:()[Ljava/lang/annotation/Annotation;
+   #40 = Class              #108          // Nullable
+   #41 = Methodref          #106.#109     // java/lang/Class.getAnnotation:(Ljava/lang/Class;)Ljava/lang/annotation/Annotation;
+   #42 = String             #110          // nullable:
+   #43 = Class              #111          // java/lang/Object
+   #44 = Utf8               <init>
+   #45 = Utf8               ()V
+   #46 = Utf8               Code
+   #47 = Utf8               LineNumberTable
+   #48 = Utf8               qqq
+   #49 = Utf8               (II)V
+   #50 = Utf8               StackMapTable
+   #51 = Class              #96           // LocalVariableAnnotation
+   #52 = Class              #112          // java/lang/String
+   #53 = Class              #112          // java/lang/String
+   #54 = Utf8               RuntimeVisibleTypeAnnotations
+   #55 = Utf8               LSampleAnnotation;
+   #56 = Utf8               value
+   #57 = Utf8               YF1
+   #58 = Utf8               YF3
+   #59 = Utf8               YF2
+   #60 = Utf8               main
+   #61 = Utf8               ([Ljava/lang/String;)V
+   #62 = Utf8               Y1
+   #63 = Utf8               Y2
+   #64 = Utf8               LNullable;
+   #65 = Utf8               Y3
+   #66 = Utf8               SourceFile
+   #67 = Utf8               LocalVariableAnnotation.java
+   #68 = NameAndType        #44:#45       // "<init>":()V
+   #69 = Utf8               dfoo1
+   #70 = Utf8               dfoo2
+   #71 = Class              #113          // java/lang/System
+   #72 = NameAndType        #114:#115     // out:Ljava/io/PrintStream;
+   #73 = Utf8               java/lang/StringBuilder
+   #74 = NameAndType        #116:#117     // append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+   #75 = Utf8                :
+   #76 = NameAndType        #118:#119     // toString:()Ljava/lang/String;
+   #77 = Class              #120          // java/io/PrintStream
+   #78 = NameAndType        #121:#122     // println:(Ljava/lang/String;)V
+   #79 = Utf8               XF1
+   #80 = Utf8               dfoo3
+   #81 = Utf8               a20
+   #82 = Utf8               XF3-1
+   #83 = Utf8               a < 20  - 1:
+   #84 = Utf8               dfoo4
+   #85 = Utf8               blah
+   #86 = Utf8               XF3-2
+   #87 = Utf8                -> a > 20 - 2 :
+   #88 = Utf8               XF2
+   #89 = NameAndType        #116:#123     // append:(I)Ljava/lang/StringBuilder;
+   #90 = Utf8               ,
+   #91 = Utf8               Hello local variable annotation
+   #92 = Utf8               d1
+   #93 = Utf8               d2
+   #94 = Utf8               X1
+   #95 = Utf8               X2
+   #96 = Utf8               LocalVariableAnnotation
+   #97 = NameAndType        #48:#49       // qqq:(II)V
+   #98 = Utf8               X3
+   #99 = Utf8               var1 =
+  #100 = Utf8               ; var2 =
+  #101 = Utf8               ; var3 =
+  #102 = Utf8               ref =
+  #103 = NameAndType        #116:#124     // append:(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+  #104 = Utf8               var3 antn:
+  #105 = NameAndType        #125:#126     // getClass:()Ljava/lang/Class;
+  #106 = Class              #127          // java/lang/Class
+  #107 = NameAndType        #128:#129     // getAnnotations:()[Ljava/lang/annotation/Annotation;
+  #108 = Utf8               Nullable
+  #109 = NameAndType        #130:#131     // getAnnotation:(Ljava/lang/Class;)Ljava/lang/annotation/Annotation;
+  #110 = Utf8               nullable:
+  #111 = Utf8               java/lang/Object
+  #112 = Utf8               java/lang/String
+  #113 = Utf8               java/lang/System
+  #114 = Utf8               out
+  #115 = Utf8               Ljava/io/PrintStream;
+  #116 = Utf8               append
+  #117 = Utf8               (Ljava/lang/String;)Ljava/lang/StringBuilder;
+  #118 = Utf8               toString
+  #119 = Utf8               ()Ljava/lang/String;
+  #120 = Utf8               java/io/PrintStream
+  #121 = Utf8               println
+  #122 = Utf8               (Ljava/lang/String;)V
+  #123 = Utf8               (I)Ljava/lang/StringBuilder;
+  #124 = Utf8               (Ljava/lang/Object;)Ljava/lang/StringBuilder;
+  #125 = Utf8               getClass
+  #126 = Utf8               ()Ljava/lang/Class;
+  #127 = Utf8               java/lang/Class
+  #128 = Utf8               getAnnotations
+  #129 = Utf8               ()[Ljava/lang/annotation/Annotation;
+  #130 = Utf8               getAnnotation
+  #131 = Utf8               (Ljava/lang/Class;)Ljava/lang/annotation/Annotation;
+{
+  public LocalVariableAnnotation();
+    descriptor: ()V
+    flags: ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         4: return
+      LineNumberTable:
+        line 14: 0
+
+  public void qqq(int, int);
+    descriptor: (II)V
+    flags: ACC_PUBLIC
+    Code:
+      stack=3, locals=9, args_size=3
+         0: ldc           #2                  // String dfoo1
+         2: astore_3
+         3: ldc           #3                  // String dfoo2
+         5: astore        4
+         7: getstatic     #4                  // Field java/lang/System.out:Ljava/io/PrintStream;
+        10: new           #5                  // class java/lang/StringBuilder
+        13: dup
+        14: invokespecial #6                  // Method java/lang/StringBuilder."<init>":()V
+        17: aload_3
+        18: invokevirtual #7                  // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+        21: ldc           #8                  // String  :
+        23: invokevirtual #7                  // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+        26: aload         4
+        28: invokevirtual #7                  // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+        31: invokevirtual #9                  // Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+        34: invokevirtual #10                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+        37: ldc           #11                 // String XF1
+        39: astore        5
+        41: ldc           #12                 // String dfoo3
+        43: astore        6
+        45: iload_1
+        46: bipush        20
+        48: if_icmple     88
+        51: ldc           #13                 // String a20
+        53: astore        5
+        55: ldc           #14                 // String XF3-1
+        57: astore        7
+        59: getstatic     #4                  // Field java/lang/System.out:Ljava/io/PrintStream;
+        62: new           #5                  // class java/lang/StringBuilder
+        65: dup
+        66: invokespecial #6                  // Method java/lang/StringBuilder."<init>":()V
+        69: ldc           #15                 // String a < 20  - 1:
+        71: invokevirtual #7                  // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+        74: aload         7
+        76: invokevirtual #7                  // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+        79: invokevirtual #9                  // Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+        82: invokevirtual #10                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+        85: goto          135
+        88: ldc           #16                 // String dfoo4
+        90: astore        7
+        92: getstatic     #4                  // Field java/lang/System.out:Ljava/io/PrintStream;
+        95: ldc           #17                 // String blah
+        97: invokevirtual #10                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+       100: ldc           #18                 // String XF3-2
+       102: astore        8
+       104: getstatic     #4                  // Field java/lang/System.out:Ljava/io/PrintStream;
+       107: new           #5                  // class java/lang/StringBuilder
+       110: dup
+       111: invokespecial #6                  // Method java/lang/StringBuilder."<init>":()V
+       114: aload         7
+       116: invokevirtual #7                  // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+       119: ldc           #19                 // String  -> a > 20 - 2 :
+       121: invokevirtual #7                  // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+       124: aload         8
+       126: invokevirtual #7                  // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+       129: invokevirtual #9                  // Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+       132: invokevirtual #10                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+       135: ldc           #20                 // String XF2
+       137: astore        7
+       139: getstatic     #4                  // Field java/lang/System.out:Ljava/io/PrintStream;
+       142: new           #5                  // class java/lang/StringBuilder
+       145: dup
+       146: invokespecial #6                  // Method java/lang/StringBuilder."<init>":()V
+       149: iload_1
+       150: invokevirtual #21                 // Method java/lang/StringBuilder.append:(I)Ljava/lang/StringBuilder;
+       153: ldc           #22                 // String ,
+       155: invokevirtual #7                  // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+       158: iload_2
+       159: invokevirtual #21                 // Method java/lang/StringBuilder.append:(I)Ljava/lang/StringBuilder;
+       162: ldc           #22                 // String ,
+       164: invokevirtual #7                  // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+       167: aload         5
+       169: invokevirtual #7                  // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+       172: ldc           #22                 // String ,
+       174: invokevirtual #7                  // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+       177: aload         7
+       179: invokevirtual #7                  // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+       182: invokevirtual #9                  // Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+       185: invokevirtual #10                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+       188: getstatic     #4                  // Field java/lang/System.out:Ljava/io/PrintStream;
+       191: new           #5                  // class java/lang/StringBuilder
+       194: dup
+       195: invokespecial #6                  // Method java/lang/StringBuilder."<init>":()V
+       198: aload_3
+       199: invokevirtual #7                  // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+       202: aload         4
+       204: invokevirtual #7                  // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+       207: aload         6
+       209: invokevirtual #7                  // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+       212: invokevirtual #9                  // Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+       215: invokevirtual #10                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+       218: return
+      LineNumberTable:
+        line 17: 0
+        line 18: 3
+        line 19: 7
+        line 22: 37
+        line 24: 41
+        line 26: 45
+        line 27: 51
+        line 29: 55
+        line 30: 59
+        line 31: 85
+        line 33: 88
+        line 34: 92
+        line 36: 100
+        line 37: 104
+        line 41: 135
+        line 43: 139
+        line 44: 188
+        line 47: 218
+      StackMapTable: number_of_entries = 2
+        frame_type = 255 /* full_frame */
+          offset_delta = 88
+          locals = [ class LocalVariableAnnotation, int, int, class java/lang/String, class java/lang/String, class java/lang/String, class java/lang/String ]
+          stack = []
+        frame_type = 46 /* same */
+      RuntimeVisibleTypeAnnotations:
+        0: #55(#56=s#57): LOCAL_VARIABLE, {start_pc=41, length=178, index=5}
+        1: #55(#56=s#58): LOCAL_VARIABLE, {start_pc=59, length=26, index=7}
+        2: #55(#56=s#58): LOCAL_VARIABLE, {start_pc=104, length=31, index=8}
+        3: #55(#56=s#59): LOCAL_VARIABLE, {start_pc=139, length=80, index=7}
+
+  public static void main(java.lang.String[]);
+    descriptor: ([Ljava/lang/String;)V
+    flags: ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=3, locals=9, args_size=1
+         0: getstatic     #4                  // Field java/lang/System.out:Ljava/io/PrintStream;
+         3: ldc           #23                 // String Hello local variable annotation
+         5: invokevirtual #10                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+         8: ldc           #24                 // String d1
+        10: astore_1
+        11: ldc           #25                 // String d2
+        13: astore_2
+        14: getstatic     #4                  // Field java/lang/System.out:Ljava/io/PrintStream;
+        17: new           #5                  // class java/lang/StringBuilder
+        20: dup
+        21: invokespecial #6                  // Method java/lang/StringBuilder."<init>":()V
+        24: aload_1
+        25: invokevirtual #7                  // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+        28: ldc           #8                  // String  :
+        30: invokevirtual #7                  // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+        33: aload_2
+        34: invokevirtual #7                  // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+        37: invokevirtual #9                  // Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+        40: invokevirtual #10                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+        43: ldc           #26                 // String X1
+        45: astore_3
+        46: ldc           #27                 // String X2
+        48: astore        4
+        50: new           #28                 // class LocalVariableAnnotation
+        53: dup
+        54: invokespecial #29                 // Method "<init>":()V
+        57: astore        5
+        59: aload         5
+        61: bipush        10
+        63: bipush        20
+        65: invokevirtual #30                 // Method qqq:(II)V
+        68: ldc           #31                 // String X3
+        70: astore        6
+        72: getstatic     #4                  // Field java/lang/System.out:Ljava/io/PrintStream;
+        75: new           #5                  // class java/lang/StringBuilder
+        78: dup
+        79: invokespecial #6                  // Method java/lang/StringBuilder."<init>":()V
+        82: ldc           #32                 // String var1 =
+        84: invokevirtual #7                  // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+        87: aload_3
+        88: invokevirtual #7                  // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+        91: ldc           #33                 // String ; var2 =
+        93: invokevirtual #7                  // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+        96: aload         4
+        98: invokevirtual #7                  // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+       101: ldc           #34                 // String ; var3 =
+       103: invokevirtual #7                  // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+       106: aload         6
+       108: invokevirtual #7                  // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+       111: invokevirtual #9                  // Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+       114: invokevirtual #10                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+       117: aconst_null
+       118: astore        7
+       120: getstatic     #4                  // Field java/lang/System.out:Ljava/io/PrintStream;
+       123: new           #5                  // class java/lang/StringBuilder
+       126: dup
+       127: invokespecial #6                  // Method java/lang/StringBuilder."<init>":()V
+       130: ldc           #35                 // String ref =
+       132: invokevirtual #7                  // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+       135: aload         7
+       137: invokevirtual #36                 // Method java/lang/StringBuilder.append:(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+       140: invokevirtual #9                  // Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+       143: invokevirtual #10                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+       146: getstatic     #4                  // Field java/lang/System.out:Ljava/io/PrintStream;
+       149: new           #5                  // class java/lang/StringBuilder
+       152: dup
+       153: invokespecial #6                  // Method java/lang/StringBuilder."<init>":()V
+       156: ldc           #37                 // String var3 antn:
+       158: invokevirtual #7                  // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+       161: aload         6
+       163: invokevirtual #38                 // Method java/lang/Object.getClass:()Ljava/lang/Class;
+       166: invokevirtual #39                 // Method java/lang/Class.getAnnotations:()[Ljava/lang/annotation/Annotation;
+       169: arraylength
+       170: invokevirtual #21                 // Method java/lang/StringBuilder.append:(I)Ljava/lang/StringBuilder;
+       173: invokevirtual #9                  // Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+       176: invokevirtual #10                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+       179: aload         6
+       181: invokevirtual #38                 // Method java/lang/Object.getClass:()Ljava/lang/Class;
+       184: ldc           #40                 // class Nullable
+       186: invokevirtual #41                 // Method java/lang/Class.getAnnotation:(Ljava/lang/Class;)Ljava/lang/annotation/Annotation;
+       189: checkcast     #40                 // class Nullable
+       192: astore        8
+       194: getstatic     #4                  // Field java/lang/System.out:Ljava/io/PrintStream;
+       197: new           #5                  // class java/lang/StringBuilder
+       200: dup
+       201: invokespecial #6                  // Method java/lang/StringBuilder."<init>":()V
+       204: ldc           #42                 // String nullable:
+       206: invokevirtual #7                  // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+       209: aload         8
+       211: invokevirtual #36                 // Method java/lang/StringBuilder.append:(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+       214: invokevirtual #9                  // Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+       217: invokevirtual #10                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+       220: return
+      LineNumberTable:
+        line 50: 0
+        line 52: 8
+        line 53: 11
+        line 54: 14
+        line 57: 43
+        line 59: 46
+        line 61: 50
+        line 62: 59
+        line 65: 68
+        line 67: 72
+        line 70: 117
+        line 71: 120
+        line 73: 146
+        line 74: 179
+        line 75: 194
+        line 77: 220
+      RuntimeVisibleTypeAnnotations:
+        0: #55(#56=s#62): LOCAL_VARIABLE, {start_pc=46, length=175, index=3}
+        1: #55(#56=s#63): LOCAL_VARIABLE, {start_pc=50, length=171, index=4}
+        2: #64(#56=s#65): LOCAL_VARIABLE, {start_pc=72, length=149, index=6}
+}
+SourceFile: "LocalVariableAnnotation.java"

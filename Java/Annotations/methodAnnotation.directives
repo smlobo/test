@@ -1,0 +1,8 @@
+# Syntax:
+#   Match classNameRegex  implementsExtendsRegex  methodNameRegex  descriptorRegex  ProbeString
+#   Ignore classNameRegex
+#   Constructor classNameRegex implementsExtendsRegex descriptorRegex ProbeString
+
+# The "Wait" class, the "main" method, 1 Array of String parameter, returning void
+#Match TestCase .* .* .* com.oracle.apm.agent.instrumentation.internal.PrintProbe
+Match .* .* foo .* .*APMInstrumentRuntime.* com.oracle.apm.agent.instrumentation.internal.PrintProbe

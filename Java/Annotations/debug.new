@@ -1,0 +1,79 @@
+Starting the agent
+Instrumentation DEBUG Attempting to parse/instrument com/oracle/apm/agent/instrumentation/export/Probe$NopProbe
+Instrumentation DEBUG Attempting to parse/instrument com/oracle/apm/agent/instrumentation/export/IProbe
+Instrumentation DEBUG Attempting to parse/instrument com/oracle/apm/agent/instrumentation/export/JavaAgent$1
+Instrumentation DEBUG Attempting to parse/instrument com/oracle/apm/agent/instrumentation/internal/IProbeFactory
+Instrumentation DEBUG Attempting to parse/instrument com/oracle/apm/agent/instrumentation/export/Probe
+Instrumentation DEBUG Attempting to parse/instrument com/oracle/apm/agent/instrumentation/internal/CallCountProbe
+Instrumentation DEBUG Attempting to parse/instrument com/oracle/apm/agent/instrumentation/internal/SafeProbe
+Instrumentation DEBUG Attempting to parse/instrument com/oracle/apm/agent/instrumentation/export/JavaAgent$2
+Instrumentation DEBUG Attempting to parse/instrument java/lang/invoke/MethodHandleImpl
+Instrumentation DEBUG Attempting to parse/instrument java/lang/invoke/MethodHandleImpl$1
+Instrumentation DEBUG Attempting to parse/instrument java/lang/invoke/MethodHandleImpl$2
+Instrumentation DEBUG Attempting to parse/instrument java/util/function/Function
+Instrumentation DEBUG Attempting to parse/instrument java/lang/invoke/MethodHandleImpl$3
+Instrumentation DEBUG Attempting to parse/instrument java/lang/invoke/MethodHandleImpl$4
+Instrumentation DEBUG Attempting to parse/instrument java/lang/ClassValue
+Instrumentation DEBUG Attempting to parse/instrument java/lang/ClassValue$Entry
+Instrumentation DEBUG Attempting to parse/instrument java/lang/ClassValue$Identity
+Instrumentation DEBUG Attempting to parse/instrument java/lang/ClassValue$Version
+Instrumentation DEBUG Attempting to parse/instrument java/lang/invoke/MemberName$Factory
+Instrumentation DEBUG Attempting to parse/instrument java/lang/invoke/MethodHandleStatics
+Instrumentation DEBUG Attempting to parse/instrument java/lang/invoke/MethodHandleStatics$1
+Instrumentation DEBUG Attempting to parse/instrument sun/misc/PostVMInitHook
+Instrumentation DEBUG Attempting to parse/instrument sun/misc/PostVMInitHook$1
+Instrumentation DEBUG Attempting to parse/instrument sun/launcher/LauncherHelper
+Instrumentation DEBUG Attempting to parse/instrument java/net/URLClassLoader$1
+Sheldon: original MV: com.oracle.apm.agent.repackaged.org.objectweb.asm.MethodWriter@28d93b30
+Sheldon: original MV: com.oracle.apm.agent.repackaged.org.objectweb.asm.MethodWriter@1b6d3586
+Sheldon: original MV: com.oracle.apm.agent.repackaged.org.objectweb.asm.MethodWriter@4554617c
+Instrumentation DEBUG Attempting to parse/instrument sun/misc/URLClassPath$FileLoader
+Instrumentation DEBUG Attempting to parse/instrument sun/misc/URLClassPath$FileLoader$1
+Instrumentation DEBUG Attempting to parse/instrument sun/nio/ByteBuffered
+Instrumentation DEBUG Attempting to parse/instrument java/security/Permissions
+Instrumentation DEBUG Attempting to parse/instrument java/security/PermissionCollection
+Instrumentation DEBUG Attempting to parse/instrument java/io/FilePermission
+Instrumentation DEBUG Attempting to parse/instrument java/io/FilePermission$1
+Instrumentation DEBUG Attempting to parse/instrument java/io/FilePermissionCollection
+Instrumentation DEBUG Attempting to parse/instrument java/security/AllPermission
+Instrumentation DEBUG Attempting to parse/instrument java/security/UnresolvedPermission
+Instrumentation DEBUG Attempting to parse/instrument java/security/BasicPermissionCollection
+Instrumentation DEBUG Attempting to parse/instrument TestCase
+Sheldon: ClassModifier.visitAnnotation: LAPMInstrumentRuntime;, true
+Sheldon: ClassModifier.visitAnnotation: LAPMInstrumentClass;, false
+Sheldon: original MV: com.oracle.apm.agent.repackaged.org.objectweb.asm.MethodWriter@677327b6
+Sheldon: original MV: com.oracle.apm.agent.repackaged.org.objectweb.asm.MethodWriter@14ae5a5
+Sheldon: AnnotationCheckMethodVisitor.visitAnnotation: LAPMInstrumentRuntime;, true
+Sheldon: Going to instrument: TestCase.foo
+Instrumentation DEBUG Instrumenting  TestCase.foo
+Sheldon: Before MV swap: ACMV: com.oracle.apm.agent.instrumentation.internal.AnnotationCheckMethodVisitor@7f31245a /// super: com.oracle.apm.agent.repackaged.org.objectweb.asm.MethodWriter@14ae5a5
+Sheldon: After MV swap: ACMV: com.oracle.apm.agent.instrumentation.internal.AnnotationCheckMethodVisitor@7f31245a /// super: com.oracle.apm.agent.instrumentation.internal.MethodModifier@6d6f6e28
+Sheldon: MethodModifier.visitAnnotation: LAPMInstrumentRuntime;, true
+Sheldon: MethodModifier: MM: com.oracle.apm.agent.instrumentation.internal.MethodModifier@6d6f6e28 /// super: com.oracle.apm.agent.repackaged.org.objectweb.asm.MethodWriter@14ae5a5
+Sheldon: AnnotationCheckMethodVisitor.visitAnnotation: LAPMInstrumentClass;, false
+Sheldon: MethodModifier.visitAnnotation: LAPMInstrumentClass;, false
+Sheldon: MethodModifier: MM: com.oracle.apm.agent.instrumentation.internal.MethodModifier@6d6f6e28 /// super: com.oracle.apm.agent.repackaged.org.objectweb.asm.MethodWriter@14ae5a5
+Sheldon: MethodModifier.visitCode for: TestCase.foo
+Sheldon: original MV: com.oracle.apm.agent.repackaged.org.objectweb.asm.MethodWriter@135fbaa4
+Sheldon: original MV: com.oracle.apm.agent.repackaged.org.objectweb.asm.MethodWriter@45ee12a7
+Instrumentation INFO Instrumented TestCase
+Instrumentation DEBUG Attempting to parse/instrument sun/launcher/LauncherHelper$FXHelper
+Instrumentation DEBUG Attempting to parse/instrument sun/misc/FloatingDecimal
+Instrumentation DEBUG Attempting to parse/instrument sun/misc/FloatingDecimal$ExceptionalBinaryToASCIIBuffer
+Instrumentation DEBUG Attempting to parse/instrument sun/misc/FloatingDecimal$BinaryToASCIIConverter
+Instrumentation DEBUG Attempting to parse/instrument sun/misc/FloatingDecimal$BinaryToASCIIBuffer
+Instrumentation DEBUG Attempting to parse/instrument sun/misc/FloatingDecimal$1
+Instrumentation DEBUG Attempting to parse/instrument sun/misc/FloatingDecimal$PreparedASCIIToBinaryBuffer
+Instrumentation DEBUG Attempting to parse/instrument sun/misc/FloatingDecimal$ASCIIToBinaryConverter
+Instrumentation DEBUG Attempting to parse/instrument sun/misc/FDBigInteger
+t1 = {10;2.22}
+Instrumentation DEBUG Attempting to parse/instrument com/oracle/apm/agent/instrumentation/internal/PrintProbe
+PROBE start TestCase.foo TestCase
+PROBE end
+t1 (post foo) = {11;1.11}
+t2 = {20;3.33}
+PROBE start TestCase.foo TestCase
+PROBE end
+t2 (post foo) = {21;2.2199999999999998}
+Instrumentation DEBUG Attempting to parse/instrument java/lang/Shutdown
+Instrumentation DEBUG Attempting to parse/instrument java/lang/Shutdown$Lock

@@ -1,0 +1,244 @@
+Classfile /home/smlobo/test/Java/Annotations/TestCase.class
+  Last modified Jun 18, 2020; size 1351 bytes
+  MD5 checksum 6267399570d148b8382cb89eec252c2a
+  Compiled from "TestCase.java"
+public class TestCase
+  minor version: 0
+  major version: 52
+  flags: ACC_PUBLIC, ACC_SUPER
+Constant pool:
+   #1 = Methodref          #29.#49        // java/lang/Object."<init>":()V
+   #2 = Fieldref           #15.#50        // TestCase.x:I
+   #3 = Fieldref           #15.#51        // TestCase.y:D
+   #4 = Double             1.11d
+   #6 = Class              #52            // java/lang/StringBuilder
+   #7 = Methodref          #6.#49         // java/lang/StringBuilder."<init>":()V
+   #8 = String             #53            // {
+   #9 = Methodref          #6.#54         // java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  #10 = Methodref          #6.#55         // java/lang/StringBuilder.append:(I)Ljava/lang/StringBuilder;
+  #11 = String             #56            // ;
+  #12 = Methodref          #6.#57         // java/lang/StringBuilder.append:(D)Ljava/lang/StringBuilder;
+  #13 = String             #58            // }
+  #14 = Methodref          #6.#59         // java/lang/StringBuilder.toString:()Ljava/lang/String;
+  #15 = Class              #60            // TestCase
+  #16 = Methodref          #15.#49        // TestCase."<init>":()V
+  #17 = Double             2.22d
+  #19 = Fieldref           #61.#62        // java/lang/System.out:Ljava/io/PrintStream;
+  #20 = String             #63            // t1 =
+  #21 = Methodref          #6.#64         // java/lang/StringBuilder.append:(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+  #22 = Methodref          #65.#66        // java/io/PrintStream.println:(Ljava/lang/String;)V
+  #23 = Methodref          #15.#67        // TestCase.foo:()V
+  #24 = String             #68            // t1 (post foo) =
+  #25 = Double             3.33d
+  #27 = String             #69            // t2 =
+  #28 = String             #70            // t2 (post foo) =
+  #29 = Class              #71            // java/lang/Object
+  #30 = Utf8               x
+  #31 = Utf8               I
+  #32 = Utf8               y
+  #33 = Utf8               D
+  #34 = Utf8               <init>
+  #35 = Utf8               ()V
+  #36 = Utf8               Code
+  #37 = Utf8               LineNumberTable
+  #38 = Utf8               foo
+  #39 = Utf8               RuntimeVisibleAnnotations
+  #40 = Utf8               LAPMInstrumentRuntime;
+  #41 = Utf8               RuntimeInvisibleAnnotations
+  #42 = Utf8               LAPMInstrumentClass;
+  #43 = Utf8               toString
+  #44 = Utf8               ()Ljava/lang/String;
+  #45 = Utf8               main
+  #46 = Utf8               ([Ljava/lang/String;)V
+  #47 = Utf8               SourceFile
+  #48 = Utf8               TestCase.java
+  #49 = NameAndType        #34:#35        // "<init>":()V
+  #50 = NameAndType        #30:#31        // x:I
+  #51 = NameAndType        #32:#33        // y:D
+  #52 = Utf8               java/lang/StringBuilder
+  #53 = Utf8               {
+  #54 = NameAndType        #72:#73        // append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  #55 = NameAndType        #72:#74        // append:(I)Ljava/lang/StringBuilder;
+  #56 = Utf8               ;
+  #57 = NameAndType        #72:#75        // append:(D)Ljava/lang/StringBuilder;
+  #58 = Utf8               }
+  #59 = NameAndType        #43:#44        // toString:()Ljava/lang/String;
+  #60 = Utf8               TestCase
+  #61 = Class              #76            // java/lang/System
+  #62 = NameAndType        #77:#78        // out:Ljava/io/PrintStream;
+  #63 = Utf8               t1 =
+  #64 = NameAndType        #72:#79        // append:(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+  #65 = Class              #80            // java/io/PrintStream
+  #66 = NameAndType        #81:#82        // println:(Ljava/lang/String;)V
+  #67 = NameAndType        #38:#35        // foo:()V
+  #68 = Utf8               t1 (post foo) =
+  #69 = Utf8               t2 =
+  #70 = Utf8               t2 (post foo) =
+  #71 = Utf8               java/lang/Object
+  #72 = Utf8               append
+  #73 = Utf8               (Ljava/lang/String;)Ljava/lang/StringBuilder;
+  #74 = Utf8               (I)Ljava/lang/StringBuilder;
+  #75 = Utf8               (D)Ljava/lang/StringBuilder;
+  #76 = Utf8               java/lang/System
+  #77 = Utf8               out
+  #78 = Utf8               Ljava/io/PrintStream;
+  #79 = Utf8               (Ljava/lang/Object;)Ljava/lang/StringBuilder;
+  #80 = Utf8               java/io/PrintStream
+  #81 = Utf8               println
+  #82 = Utf8               (Ljava/lang/String;)V
+{
+  public double y;
+    descriptor: D
+    flags: ACC_PUBLIC
+
+  public TestCase();
+    descriptor: ()V
+    flags: ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         4: return
+      LineNumberTable:
+        line 20: 0
+
+  public void foo();
+    descriptor: ()V
+    flags: ACC_PUBLIC
+    Code:
+      stack=5, locals=1, args_size=1
+         0: aload_0
+         1: dup
+         2: getfield      #2                  // Field x:I
+         5: iconst_1
+         6: iadd
+         7: putfield      #2                  // Field x:I
+        10: aload_0
+        11: dup
+        12: getfield      #3                  // Field y:D
+        15: ldc2_w        #4                  // double 1.11d
+        18: dsub
+        19: putfield      #3                  // Field y:D
+        22: return
+      LineNumberTable:
+        line 28: 0
+        line 29: 10
+        line 30: 22
+    RuntimeVisibleAnnotations:
+      0: #40()
+    RuntimeInvisibleAnnotations:
+      0: #42()
+
+  public java.lang.String toString();
+    descriptor: ()Ljava/lang/String;
+    flags: ACC_PUBLIC
+    Code:
+      stack=3, locals=1, args_size=1
+         0: new           #6                  // class java/lang/StringBuilder
+         3: dup
+         4: invokespecial #7                  // Method java/lang/StringBuilder."<init>":()V
+         7: ldc           #8                  // String {
+         9: invokevirtual #9                  // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+        12: aload_0
+        13: getfield      #2                  // Field x:I
+        16: invokevirtual #10                 // Method java/lang/StringBuilder.append:(I)Ljava/lang/StringBuilder;
+        19: ldc           #11                 // String ;
+        21: invokevirtual #9                  // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+        24: aload_0
+        25: getfield      #3                  // Field y:D
+        28: invokevirtual #12                 // Method java/lang/StringBuilder.append:(D)Ljava/lang/StringBuilder;
+        31: ldc           #13                 // String }
+        33: invokevirtual #9                  // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+        36: invokevirtual #14                 // Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+        39: areturn
+      LineNumberTable:
+        line 33: 0
+
+  public static void main(java.lang.String[]);
+    descriptor: ([Ljava/lang/String;)V
+    flags: ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=3, locals=3, args_size=1
+         0: new           #15                 // class TestCase
+         3: dup
+         4: invokespecial #16                 // Method "<init>":()V
+         7: astore_1
+         8: aload_1
+         9: bipush        10
+        11: putfield      #2                  // Field x:I
+        14: aload_1
+        15: ldc2_w        #17                 // double 2.22d
+        18: putfield      #3                  // Field y:D
+        21: getstatic     #19                 // Field java/lang/System.out:Ljava/io/PrintStream;
+        24: new           #6                  // class java/lang/StringBuilder
+        27: dup
+        28: invokespecial #7                  // Method java/lang/StringBuilder."<init>":()V
+        31: ldc           #20                 // String t1 =
+        33: invokevirtual #9                  // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+        36: aload_1
+        37: invokevirtual #21                 // Method java/lang/StringBuilder.append:(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+        40: invokevirtual #14                 // Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+        43: invokevirtual #22                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+        46: aload_1
+        47: invokevirtual #23                 // Method foo:()V
+        50: getstatic     #19                 // Field java/lang/System.out:Ljava/io/PrintStream;
+        53: new           #6                  // class java/lang/StringBuilder
+        56: dup
+        57: invokespecial #7                  // Method java/lang/StringBuilder."<init>":()V
+        60: ldc           #24                 // String t1 (post foo) =
+        62: invokevirtual #9                  // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+        65: aload_1
+        66: invokevirtual #21                 // Method java/lang/StringBuilder.append:(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+        69: invokevirtual #14                 // Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+        72: invokevirtual #22                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+        75: new           #15                 // class TestCase
+        78: dup
+        79: invokespecial #16                 // Method "<init>":()V
+        82: astore_2
+        83: aload_2
+        84: bipush        20
+        86: putfield      #2                  // Field x:I
+        89: aload_2
+        90: ldc2_w        #25                 // double 3.33d
+        93: putfield      #3                  // Field y:D
+        96: getstatic     #19                 // Field java/lang/System.out:Ljava/io/PrintStream;
+        99: new           #6                  // class java/lang/StringBuilder
+       102: dup
+       103: invokespecial #7                  // Method java/lang/StringBuilder."<init>":()V
+       106: ldc           #27                 // String t2 =
+       108: invokevirtual #9                  // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+       111: aload_2
+       112: invokevirtual #21                 // Method java/lang/StringBuilder.append:(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+       115: invokevirtual #14                 // Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+       118: invokevirtual #22                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+       121: aload_2
+       122: invokevirtual #23                 // Method foo:()V
+       125: getstatic     #19                 // Field java/lang/System.out:Ljava/io/PrintStream;
+       128: new           #6                  // class java/lang/StringBuilder
+       131: dup
+       132: invokespecial #7                  // Method java/lang/StringBuilder."<init>":()V
+       135: ldc           #28                 // String t2 (post foo) =
+       137: invokevirtual #9                  // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+       140: aload_2
+       141: invokevirtual #21                 // Method java/lang/StringBuilder.append:(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+       144: invokevirtual #14                 // Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+       147: invokevirtual #22                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+       150: return
+      LineNumberTable:
+        line 37: 0
+        line 38: 8
+        line 39: 14
+        line 40: 21
+        line 41: 46
+        line 42: 50
+        line 44: 75
+        line 45: 83
+        line 46: 89
+        line 47: 96
+        line 48: 121
+        line 49: 125
+        line 50: 150
+}
+SourceFile: "TestCase.java"
+RuntimeInvisibleAnnotations:
+  0: #42()

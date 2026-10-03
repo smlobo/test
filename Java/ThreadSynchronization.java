@@ -1,0 +1,63 @@
+class Table {  
+    private int commonN;
+
+    //void printTable(int n) { //method not synchronized  
+    synchronized void printTable(int n) { //method synchronized  
+        commonN = n;
+        for (int i = 1; i <= 5; i++) {  
+            System.out.println(Thread.currentThread().getName() + " -> " + commonN*i);  
+	    try {
+               Thread.sleep(50);  
+ 	    }
+	    catch (Exception e) {}
+        }
+    }
+}
+
+class MyThread1 extends Thread{  
+    Table t;
+    
+    MyThread1(Table t) {  
+        this.t = t;  
+    }
+    
+    public void run() {
+        //synchronized(t)
+        {
+            t.printTable(5);
+        }
+    }      
+}
+
+class MyThread2 extends Thread{  
+    Table t;
+    
+    MyThread2(Table t) {  
+        this.t = t;  
+    }
+    
+    public void run() {  
+        //synchronized(t)
+        {
+            t.printTable(100);
+        }
+    }
+}
+
+class TestSynchronization {  
+    public static void main(String args[]) {  
+        Table obj = new Table(); //only one object  
+        MyThread1 t1 = new MyThread1(obj);  
+        MyThread2 t2 = new MyThread2(obj);  
+        t1.start();
+        t2.start();
+
+        try {
+            t1.join();
+            t2.join();
+        }
+        catch (Exception e) {
+            System.out.println("Join failed");
+        }
+    }
+}
