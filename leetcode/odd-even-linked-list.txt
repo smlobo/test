@@ -1,0 +1,11 @@
+
+1, 2, 3, 4, 5
+
+head    oddHead oddPtr  evenHead    evenPtr isOdd
+1       n       n       n           n       T
+2       1       1                           F
+3                       2           2       T
+4               3                           F
+5                                   4       T
+n               5                           F
+
