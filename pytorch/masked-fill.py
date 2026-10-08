@@ -5,7 +5,7 @@ def main():
     n: Int = 4
     m: Int = 6
 
-    print("Square: ({n}x{n})")
+    print(f'Square: ({n}x{n})')
     ones = torch.ones((n, n), dtype=torch.bool)
     lMask = ones.tril()
     print(f'Lower mask {n}x{n}:\n{lMask}')
@@ -14,7 +14,7 @@ def main():
     masked = random2d.masked_fill(lMask, -1)
     print(f'Masked {n}x{n}:\n{masked}')
 
-    print("Rectangular: ({n}x{m})")
+    print(f'Rectangular: ({n}x{m})')
     ones = torch.ones((n, m), dtype=torch.bool)
     lMask = ones.tril()
     print(f'Lower mask {n}x{m}:\n{lMask}')
