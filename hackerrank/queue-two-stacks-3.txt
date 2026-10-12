@@ -1,0 +1,14 @@
+6
+enqueue
+enqueue
+peek
+dequeue
+size
+dequeue
+6
+5
+3
+0
+0
+0
+0

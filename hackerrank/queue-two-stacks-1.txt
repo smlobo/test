@@ -1,0 +1,8 @@
+3
+enqueue
+enqueue
+peek
+3
+5
+10
+0

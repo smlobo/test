@@ -1,0 +1,6 @@
+2
+enqueue
+dequeue
+2
+7
+0
