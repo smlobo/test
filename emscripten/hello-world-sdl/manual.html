@@ -1,0 +1,18 @@
+<html>
+  <head>
+    <title>Manual HTML</title>
+  </head>
+
+  <body>
+    <canvas id="canvas"></canvas>
+    <script type='text/javascript'>
+      var Module = {
+        canvas: (() => {
+          var canvas = document.getElementById('canvas');
+          return canvas;
+        })(),
+      };
+    </script>
+    <script async type="text/javascript" src="hello-world-sdl.js"></script>
+  </body>
+</html>
