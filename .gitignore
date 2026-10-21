@@ -135,3 +135,7 @@ gradlew.bat
 # wasm binaries
 *.wasm
 
+# graphviz and pdfs
+*.dot
+*.pdf
+

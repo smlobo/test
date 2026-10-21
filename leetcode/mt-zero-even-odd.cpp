@@ -2,6 +2,7 @@
 #include <functional>
 #include <semaphore>
 #include <thread>
+#include <vector>
 
 class ZeroEvenOdd {
 private:

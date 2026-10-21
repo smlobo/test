@@ -1,0 +1,35 @@
+
+Dump AST:
+% clang -c no-free.c -Xclang -ast-dump
+
+Dump IR
+% clang -S -emit-llvm no-free.c 
+% clang -O3 -Xclang -disable-llvm-passes  -S -emit-llvm foo.c
+
+Process IR from stack to regs (& SSA)
+% opt -enable-new-pm=0 -S -mem2reg -instnamer foo.O3.disable.ll -o foo.code-before-opt.ll
+
+Dump IR bitcode
+% clang -c -emit-llvm no-free.c 
+
+Bitcode to text
+% llvm-dis foo2.bc 
+
+Bitcode to assembly
+% llc foo.bc -o foo.bc.s
+
+IR execution - text OR bitcode
+% lli xxx.ll
+% lli xxx.bc
+
+# IR to dot
+% opt -dot-cfg exceptions.ll -disable-output -enable-new-pm=0
+
+# other "opt" options
+    -dot-callgraph
+    -dot-dom
+    -dot-postdom
+
+# dot to pdf
+% dot -Tpdf exceptions.main.cfg.dot -o exceptions.main.cfg.pdf
+
