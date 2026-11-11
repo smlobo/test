@@ -1,3 +1,4 @@
+//go:build ignore
 package main
 
 import (
@@ -16,6 +17,18 @@ func (l *List[T]) String() string {
 		return "<nil>"
 	}
 	return fmt.Sprintf("<%v>->%v", l.val, l.next)
+}
+
+func (l *List[T]) Reverse() *List[T] {
+	var prev, curr, next *List[T]
+	prev, curr, next = nil, l, nil
+	for curr != nil {
+		next = curr.next
+		curr.next = prev
+		prev = curr
+		curr = next
+	}
+	return prev
 }
 
 func main() {
@@ -38,4 +51,12 @@ func main() {
 	n3.next = &n4
 
 	fmt.Printf("List (connected): %v\n", head)
+
+	fmt.Printf("List (reversed): %v\n", head.Reverse())
+
+	fmt.Printf("Single element list: %v", &n1)
+	fmt.Printf("; (reversed): %v\n", (&n1).Reverse())
+
+	fmt.Printf("2 element list: %v", &n2)
+	fmt.Printf("; (reversed): %v\n", (&n2).Reverse())
 }
