@@ -62,11 +62,14 @@ int main() {
     AtomicCounter c2(8);
     int t2Count = 64;
     std::atomic<int> successfulCount{0};
+    std::atomic<int> unsuccessfulCount{0};
     threads.clear();
     for (int i = 0; i < t2Count; i++) {
-        threads.emplace_back([&c2, &successfulCount] {
+        threads.emplace_back([&c2, &successfulCount, &unsuccessfulCount] {
             if (c2.increment_if_less_than(10)) {
                 successfulCount.fetch_add(1);
+            } else {
+                unsuccessfulCount.fetch_add(1);
             }
         });
     }
@@ -76,4 +79,6 @@ int main() {
     std::cout << "Final value (expected 10): " << c2.get() << "\n";
     std::cout << "Successful increment_if_less_than (expected 2): " << 
         successfulCount.load() << "\n";
+    std::cout << "Unsuccessful increment_if_less_than (expected 62): " << 
+        unsuccessfulCount.load() << "\n";
 }
