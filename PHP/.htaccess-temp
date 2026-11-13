@@ -1,0 +1,3 @@
+Options +Includes
+AddType text/html shtml php
+AddHandler server-parsed shtml

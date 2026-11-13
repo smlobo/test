@@ -1,0 +1,7 @@
+#use <conio>
+
+int main() {
+  printf("Hello\n");
+  return 0;
+}
+
