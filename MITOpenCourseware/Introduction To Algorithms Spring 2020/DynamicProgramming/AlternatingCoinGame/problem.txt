@@ -1,0 +1,7 @@
+Alternating Coin Game
+
+• Given a sequence of n coins of value v0,v1,...,vn
+• Two players (“me” and “you”) take turns
+• In a turn, take first or last coin among remaining coins
+• My goal is to maximize total value of my taken coins, where I go first
+
